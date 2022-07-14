@@ -1,0 +1,18 @@
+
+
+color rosita #efc5dd
+
+
+color frambuesa #bf1031
+
+
+amarillo pastel  #
+
+#fde2ad4d
+
+
+border: rgba(204, 204, 204, 0.377)
+
+#f8b4b8
+
+color rojito: #e82f5b
