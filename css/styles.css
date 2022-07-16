@@ -48,9 +48,13 @@ header{
     justify-content: flex-end;
     font-size: x-large;
     text-shadow: 1px 1px 2px black;
+
 }
 
-
+.header__list:hover{
+    transform: scale(1.01, 1.01);
+    transition: all 1s;
+}
 
 
 .header__item{
@@ -74,6 +78,11 @@ header{
     align-items: flex-start;
     margin-left: 30px;
     position: fixed;
+}
+
+.header__logo:hover{
+    transform: scale(1.05, 1.05);
+    transition: all 1s;
 }
 
 .border__linea{
@@ -171,6 +180,10 @@ header{
     margin-left: 50px;
     border:dimgray solid 1px;
     border-radius: 3px;
+}
+
+.modo-uso__img:hover{
+    transform: scale(1.01, 1.01);
 }
 
 
@@ -310,6 +323,15 @@ button:hover{
     flex-wrap: nowrap;
 }
 
+.galeria__fotos-2{
+    width: 350px;
+    height: 350px;
+    background-color:dimgray;
+    margin: 40px;
+    padding: 1px 1px 1px 1px;
+    border-radius: 20px;
+}
+
 
 .galeria__fotos{
     width: 350px;
@@ -318,6 +340,16 @@ button:hover{
     margin: 20px;
     padding: 1px 1px 1px 1px;
     border-radius: 20px;
+}
+
+.galeria__fotos:hover{
+    transform: scale(1.05, 1.05);
+    transition: all 1s;
+}
+.galeria__fotos-2:hover{
+    transform: scale(1.05, 1.05);
+    transition: all 1s;
+
 }
 
 .galeria__texto{
@@ -493,7 +525,7 @@ footer{
         
     }
     .header__logo{
-        height: 40px;
+        height: 30px;
         margin-left: 30px;
         position: relative;
     }
@@ -606,6 +638,11 @@ footer{
         align-items: center;
     }
     .galeria__fotos{
+        width: 200px;
+        height: 200px;
+        margin: 20px 0;
+    }
+    .galeria__fotos-2{
         width: 200px;
         height: 200px;
         margin: 20px 0;
@@ -729,7 +766,7 @@ footer{
     }
     
     .productos__franui{ 
-        width:  150px; /* ancho */
+        width:  150px;
         height: 130px;
         margin: auto;
         padding-top: 20px;
@@ -753,6 +790,11 @@ footer{
         align-items: center;
     }
     .galeria__fotos{
+        width: 200px;
+        height: 200px;
+        margin: 20px 0;
+    }
+    .galeria__fotos-2{
         width: 200px;
         height: 200px;
         margin: 20px 0;
