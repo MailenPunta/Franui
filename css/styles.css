@@ -545,6 +545,7 @@ footer{
         grid-template-rows: 1fr;
         margin: 0%;
         justify-items: center;
+        margin-bottom: 30px;
     }
     
     .franui-leche{
@@ -704,20 +705,20 @@ footer{
     
     .contenedor-productos{
         display: grid;
-        grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        margin: 0%;
         justify-items: center;
+        margin: 0%;
     }
     .cartas-productos{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 300px;
+        width: 150px;
         height: 300px;
+        margin-bottom: 30px;
     }
     .texto-producto{
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Arima', cursive;
     }
     
@@ -728,21 +729,21 @@ footer{
     }
     
     .productos__franui{ 
-        width:  200px; /* ancho */
-        height: 200px;
+        width:  150px; /* ancho */
+        height: 130px;
         margin: auto;
         padding-top: 20px;
     }
     
     .producto__destacado{
         padding-top: 40px;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 130px;
         margin: auto;
     }
     button{
         color: white;
-        font-size: 13px;
+        font-size: 10px;
     }
     .galeria{
         display: flex;
