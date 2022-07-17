@@ -37,6 +37,7 @@ header{
     position: sticky;
     top: 0px;
     background-color: #f8b4b8;
+    z-index: 1;
 }
 
 .header__list{
@@ -320,7 +321,7 @@ button:hover{
 .galeria{
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .galeria__fotos-2{
@@ -784,10 +785,9 @@ footer{
     }
     .galeria{
         display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items:center;
     }
     .galeria__fotos{
         width: 200px;
