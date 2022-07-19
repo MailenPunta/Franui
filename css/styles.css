@@ -4,102 +4,109 @@
 }
 
 
-h1{
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
+.fondo-gradiante{
+    background-image: linear-gradient(to left, #f9edf5, #f8dfeb, #f9d0dd, #f9c2cc, #f8b4b8);
+    background-size: 400%;
+    animation: fanimado 5s infinite;
 }
-h2{
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
-    font-size: 60px;
-    color: #792326;
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
-
-
-/* ul {
-    list-style: none;
-    padding: 0 16px;
-} */
-
 
 /* HEADER */
 
-
-.header__nav{
-    margin-top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    border-bottom: #7923269a solid 1px;
+.nav-position{
+    margin-left: auto !important;
 }
 
-header{
+
+.logito:hover{
+    transform: scale(1.05, 1.05);
+    transition: all 0.5s;
+}
+
+
+
+.header{
     position: sticky;
     top: 0px;
     background-color: #f8b4b8;
     z-index: 1;
-}
-
-.header__list{
-    display: flex;
-    list-style: none;
-    padding: 0 16px;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-size: x-large;
-    text-shadow: 1px 1px 2px black;
-
-}
-
-.header__list:hover{
-    transform: scale(1.01, 1.01);
-    transition: all 1s;
+    border-bottom: #7923269a solid 1px;
 }
 
 
-.header__item{
-    display: inline;
-    padding: 25px;
-    font-family: 'Bebas Neue', cursive;
-    border: #792326;
-}
-
-.header__item a{
+.texto-nav{
     color: white;
-    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px black;
+    margin: 10px;
 }
 
-
-.header__logo{
-    display: flex;
-    justify-content: center;
-    height: 45px;
-    padding: 10px;
-    align-items: flex-start;
-    margin-left: 30px;
-    position: fixed;
+.texto-nav:hover{
+    color: #792326;
+    transform: scale(1.10, 1.10);
+    transition: all 0.8s;
+    text-shadow: none;
 }
 
-.header__logo:hover{
-    transform: scale(1.05, 1.05);
-    transition: all 1s;
-}
 
 .border__linea{
     margin-top: 80px;
     border-top: solid rgba(105, 105, 105, 0.267) 1px;
     margin-left: 300px;
     margin-right: 300px;
-    
 }
 
 /* INICIO */
 
-.portada{
-    width:  100%;
-    height: 750px;
+.cartas-envios{
+    padding: 0px !important;
 }
+
+.cartas-fondo{
+    background-color: rgba(0, 255, 255, 0);
+    border: none !important;
+    width: 100px !important;
+}
+.carta-border{
+    border-left: solid #7923266e 1px !important;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.carta-textos{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+    color: #792326;
+}
+.carta-textos2{
+    font-family: 'Arima', cursive;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.portada{
+    width: 100%;
+    height: 690px;
+    filter: saturate(100%);
+    border-bottom: #7923269a solid 2px;
+    border-top: #7923269a solid 2px;
+    box-shadow: 10px 10px 10px 14px rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+
+
 
 .iconsheader-contenedor{
     display: flex;
@@ -132,11 +139,11 @@ header{
 .quesonfranui{
     font-family: 'Bebas Neue', cursive;
     color: #792326;
-    font-size: 40px;
+    font-size: 45px;
     padding-top: 100px;
     text-align: end;
-    margin-right: 100px;
-    text-shadow: 1px 1px 2px black;
+    margin-right: 180px;
+    text-shadow: 1px 2px 2px black;
 }
 
 .queson__descripcion{
@@ -159,14 +166,13 @@ header{
 
 .modo-uso{
     font-family: 'Bebas Neue', cursive;
-    text-align: center;
     color: #792326;
     margin-top: 30px;
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 60px;
     text-align: start;
-    margin-left: 100px;
-    text-shadow: 1px 1px 2px black;
+    margin-left: 172px;
+    text-shadow: 1px 2px 2px black;
 }
 
 .modo-uso-div{
@@ -181,6 +187,8 @@ header{
     margin-left: 50px;
     border:dimgray solid 1px;
     border-radius: 3px;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.5);
+
 }
 
 .modo-uso__img:hover{
@@ -231,33 +239,25 @@ header{
     transform: scale(1.01,1.01);
 }
 
+.contenedor-franui{
+    padding: 0% !important;
+}
+
 .productos__texto{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
     color: #792326;
     margin: 30px 0;
     font-size: 85px;
     flex-wrap: wrap;
     text-decoration: none;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 2px 2px black;
 }
 
-
-.cartas-productos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border: dimgray solid 2px;
-    border-radius: 5px;
-    width: 500px;
-    height: 500px;
-}
-
-
-.texto-producto{
-    font-size: 30px;
-    padding-bottom: 7px;
-    font-family: 'Arima', cursive;
+.texto-productos{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    color: #792326;
 }
 
 
@@ -269,51 +269,41 @@ header{
 
 
 .productos__franui{ 
-    width:  450px; /* ancho */
-    height: 450px;
+    width:  250px; /* ancho */
+    height: 250px;
     margin: auto;
+    padding: 10px;
+    padding-top: 20px;
 }
 
 .producto__destacado{
-    width: 450px;
-    height: 430px;
+    width: 250px;
+    height: 250px;
     margin: auto;
-    margin-top: 22px;
+    padding: 10px;
+    padding-top: 20px;
 }
 
+.botoncito-fondo{
+    background-color: white !important ;
+}
 
-button{
+.botoncito{
     background-color: #e82f5b;
     border: dimgray solid 1px;
     border-radius: 3px;
+    padding: 8px;
     color: white;
-    padding: 10px;
-    font-size: 17px;
-    margin-bottom: 87px;
+    font-size: 15px;
 }
 
-button:hover{
-    transform: scale(1.05,1);
+.botoncito:hover{
+    transform: scale(1.05,1.05);
 }
 
-
-/* ICONO FLOTANTE*/
-
-.wsp{
-    position: fixed;
-    bottom: 5px;
-    right: 8px;
-    color: white;
-    background-color: #f8b4b8;
-    padding: 3px;
-    border-radius: 7px;
+.card-margin{
+    margin: 10px !important;
 }
-
-.wsp__img{
-    width: 50px;
-    height: 50px;
-}
-
 
 
 /* GALERIA */
@@ -331,6 +321,7 @@ button:hover{
     margin: 40px;
     padding: 1px 1px 1px 1px;
     border-radius: 20px;
+    box-shadow: 1px 10px 15px rgba(0,0,0,0.5);
 }
 
 
@@ -341,25 +332,31 @@ button:hover{
     margin: 20px;
     padding: 1px 1px 1px 1px;
     border-radius: 20px;
+    box-shadow: 1px 10px 15px rgba(0,0,0,0.5);
 }
 
 .galeria__fotos:hover{
     transform: scale(1.05, 1.05);
     transition: all 1s;
+    filter: grayscale(0.3);
 }
+
 .galeria__fotos-2:hover{
     transform: scale(1.05, 1.05);
     transition: all 1s;
-
+    filter:grayscale(0.3);
 }
 
+
 .galeria__texto{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
     color: #792326;
     margin: 30px 0;
     font-size: 85px;
     flex-wrap: wrap;
     text-decoration: none;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 2px 2px black;
 }
 
 .contenedorfranui{
@@ -375,53 +372,69 @@ button:hover{
 /* ENVIOS */
 
 .envios-texto{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
     color: #792326;
     margin: 30px 0;
     font-size: 85px;
     flex-wrap: wrap;
     text-decoration: none;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 2px 2px black;
 }
 
 .venta-arg{
     text-align: center;
+    font-family: 'Arima', cursive;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.completar-font{
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive !important;
+    text-shadow: 1px 2px 2px black;
+    
 }
 
 .formulario-envios{
-    width: 400px;
-    background-color: #efc5dd63;
+    width: 600px;
+    background-color: #ec1e4e;
     margin: auto;
     margin-bottom: 50px;
     border-radius: 20px;
     border: dimgray;
     border-style: solid;
     border-width: 1px;
-}
-
-.informacion__envios{
-    padding: 20px;
-    text-align: center;
-    font-size: 19px;
+    box-shadow:  10px 10px 25px rgba(0,0,0,0.5);
 
 }
 
-.boton-envios{
-    color: black;
-    font-size: 17px;
-    padding: 5px;    
+.color-btn{
+    font-size: 20px;
+    font-weight: bold;
+    color:  #ec1e4e !important;
+    background-color: white;
+    border:2px solid white !important;
 }
-
+.color-btn:hover{
+    transform: scale(1.01,1.01) !important;
+    transition: all 0.5s;
+    background-color: #f8b4b8;
+}
 
 .sucursal{
     text-align: center;
-    font-size: 26px;
+    font-size: 28px;
     color: #792326;
+    font-family: 'Bebas Neue', cursive;
+    
 }
 
 .direccion{
     text-align: right;
     margin: 15px;
 }
+
 
 
 /* SOBRE NOSOTROS */
@@ -433,12 +446,14 @@ button:hover{
 
 
 .texto-sobrenosotros{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
     color: #792326;
     margin: 30px 0;
     font-size: 85px;
     flex-wrap: wrap;
     text-decoration: none;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 2px 2px black;
 }
 
 .about-us{
@@ -471,39 +486,15 @@ button:hover{
 
 footer{
     background-color: #f8b4b8 ;
-    padding: 30px;
+    padding: 20px;
     border-top: #7923269a solid 1px;
 }
 
-.footer__redes{
-    font-weight:lighter;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    padding-top: 3px;
-    color: white;
-    font-size: 23px;
-
-}
-
-.contenedor-iconos{
-    display: flex;
-    justify-content: center;
-}
-
-.footer__iconos{
-    width: 36px;
-    margin: 10px;
-    padding-top: 20px;
+.logofranui-footer{
+    margin-right: 20px;
 }
 
 
-.footer__derechos{
-    font-weight:lighter;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    padding-top: 15px;
-}
 
 
 /* MEDIA QUERIE CELULAR*/

@@ -1,6 +1,6 @@
 
 
-color rosita #efc5dd
+color rosita #f8b4b8
 
 
 color frambuesa #bf1031

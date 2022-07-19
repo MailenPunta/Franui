@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Bebas+Neue&family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Bebas+Neue&family=Handlee&display=swap"rel="stylesheet">
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS -->
@@ -16,57 +17,124 @@
     <link rel="shortcut icon" href="../resources/favicon.ico" type="image/x-icon">
     <title>PRODUCTOS</title>
 </head>
-<body>
+
+<body class="fondo-gradiante">
     <header>
-        <a href="../index.html"><img class="header__logo"  src="../resources/logo-franui.png" alt="Logo Franui"></a>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item"><a href="../index.html">Inicio</a></li>
-                <li class="header__item"><a href="productos.html">Productos</a></li>
-                <li class="header__item"><a href="galeria.html">Galeria</a></li>
-                <li class="header__item"><a href="envios.html">Envios</a></li>
-                <li class="header__item"><a href="sobrenosotros.html">Sobre nosotros</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+            <a class="navbar-brand logito mb-2" href="../index.html">
+                <img src="../resources/logo-franui.png" alt="Logo franuí" width="150" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-position">
+                <li class="nav-item">
+                    <a class="nav-link texto-nav" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link texto-nav" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link texto-nav" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link texto-nav" href="envios.html">Envios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link texto-nav" href="sobrenosotros.html">Sobre nosotros</a>
+                </li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h2 class="productos__texto">PRODUCTOS</h2>
-        </section>
-        <section class="contenedor-productos">
-            <article class="cartas-productos franui-leche">
-                    <img class="productos__franui"  src="../resources/franuilechepng.png" alt="Franui leche">
-                    <h3 class="texto-producto">Franui de Leche</h3>
-                    <p class="productos-descripcion">Frambuesa bañada en Chocolate Blanco y cubierta con Chocolate de Leche. 150GR</p>
-                    <button>Agregar al carrito</button>
-            </article>
-            <article class="cartas-productos franui-semiamargo">
-                    <img class="producto__destacado"  src="../resources/FranuiSemiAmargo.png" alt="Franui semiamargo">
-                    <h3 class="texto-producto">Franui Semiamargo</h3>
-                    <p class="productos-descripcion">Frambuesa bañada en Chocolate Blanco y cubierta con Chocolate Semiamargo. 150GR</p>
-                    <button>Agregar al carrito</button>
-            </article>
-            <article class="cartas-productos  franui-amargo">
-                    <img class="productos__franui"  src="../resources/franuiamargopng.png" alt="Franui amargo">
-                    <h3 class="texto-producto">Franui Amargo</h3>
-                    <p class="productos-descripcion">Frambuesa bañada en Chocolate Blanco y cubierta con Chocolate Amargo. 150GR</p>
-                    <button>Agregar al carrito</button>
-            </article>
-        </section>
-        <section class="wsp">
-            <a href="../index.html" ><img class="wsp__img" src="../resources/wspheader.png" alt="wsp icono"></a>
-        </section>
-    </main>
-    <footer>
-            <p class="footer__redes">Nuestras redes/contacto</p>
-            <div class="contenedor-iconos">
-                <a href="../pages/productos.html"><img class="footer__iconos"  src="../resources/instagram-brands.svg"></a>
-                <a href="../pages/productos.html"><img class="footer__iconos"  src="../resources/whatsapp-brands.svg"></a>
-                <a href="../pages/productos.html"><img class="footer__iconos"  src="../resources/emailblanco.png"></a>
+        <div>
+            <section class="container">
+                <div class="card-group mb-4">
+                    <div class="card cartas-fondo">
+                        <img class="m-auto" width="70" src="../resources/delivery.png" alt="delivery logo">
+                        <div class="card-body cartas-envios">
+                            <h5 class="text-center carta-textos">ENVÍOS A TODO EL PAÍS</h5>
+                            <p class="text-center carta-textos2">Vos pedís, nosotros te lo llevamos.</p>
+                        </div>
+                    </div>
+                    <section class="carta-border"></section>
+                    <div class="card cartas-fondo">
+                        <img class="m-auto" width="70" src="../resources/mercadopago.png" alt="mercado pago logo">
+                        <div class="card-body cartas-envios">
+                            <h5 class="text-center carta-textos">MERCADOPAGO</h5>
+                            <p class="text-center carta-textos2">Aceptamos transferencias de mercadopago.</p>
+                        </div>
+                    </div>
+                    <section class="carta-border"></section>
+                    <div class="card cartas-fondo">
+                        <img class="m-auto" width="70" src="../resources/billete2.png" alt="billete logo">
+                        <div class="card-body cartas-envios">
+                            <h5 class="text-center carta-textos">EFECTIVO</h5>
+                            <p class=" text-center carta-textos2">Obtén 10% descuento abonando en efectivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             </div>
-            <p class="footer__derechos"> © Copyright 2022 | Todos los derechos reservados | Página creada por Mailen Punta</p>
+        </div>
+        <section>
+            <p class="productos__texto">PRODUCTOS</p>
+        </section>
+        <div class="container m-auto contenedor-franui">
+        <div class="card-group mb-5">
+            <div class="card card-margin">
+            <img src="../resources/fotito1.png" class="card-img-top productos__franui" alt="Franui amargo">
+            <div class="card-body">
+                <h5 class="card-title text-center texto-productos">FRANUÍ AMARGO</h5>
+                <p class="card-text text-center carta-textos2">Bombones de frambuesa bañada en Chocolate Blanco y cubierta con Chocolate Amargo.150GR.</p>
+            </div>
+            <div class=" m-auto mb-3">
+                <small><button class="botoncito ">Agregar al carrito</button></small>
+            </div>
+            </div>
+            <div class="card card-margin">
+            <img src="../resources/fotito2-02.png" class="card-img-top producto__destacado" alt="franui semiamargo">
+            <div class="card-body">
+                <h5 class="card-title text-center texto-productos">FRANUÍ SEMIAMARGO</h5>
+                <p class="card-text text-center carta-textos2">Bombones de Frambuesa bañada en Chocolate Blanco y cubierta con Chocolate Semiamargo. 150GR.</p>
+            </div>
+            <div class="m-auto mb-3">
+                <small><button class="botoncito">Agregar al carrito</button></small>
+            </div>
+            </div>
+            <div class="card card-margin">
+            <img src="../resources/fotito3.png" class="card-img-top productos__franui" alt="franui de leche">
+            <div class="card-body">
+                <h5 class="card-title text-center texto-productos">FRANUÍ DE LECHE</h5>
+                <p class="card-text text-center carta-textos2">Bombones de frambuesa bañada en Chocolate Blanco y cubierta con Chocolate de Leche. 150GR.</p>
+            </div>
+            <div class="m-auto mb-3">
+                <small><button class="botoncito">Agregar al carrito</button></small>
+            </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
+        <div class="col-md-8 d-flex align-items-center">
+            <img class="logofranui-footer" width="80" src="../resources/logo-franui.png" alt="Logo franuí">
+            <p class="mb-3 mb-md-0 text-white ">&copy; Copyright 2022 | Todos los derechos reservados | Página creada por Mailen Punta</p>
+        </div>
+        <ul class="nav col-md-4 justify-content-end align-items-center d-flex">
+            <li class="ms-3 text-white nuestras-redes">NUESTRAS REDES:</li>
+            <li class="ms-3"><a class="text-muted" href="#"><img width="30" height="30" src="../resources/fbicono.png" alt="Facebook"></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img width="30" height="30" src="../resources/googleicon.png" alt="Google"></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img width="30" height="30" src="../resources/twittericon.png" alt="Twitter"></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img width="30" height="30" src="../resources/whatsapp-icon.png" alt="Whatsapp"></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img width="30" height="30" src="../resources/instagram-icon.png" alt="Instagram"></a></li>
+        </ul>
     </footer>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
-</html> 
+
+</html>
