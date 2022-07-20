@@ -193,6 +193,7 @@
 
 .modo-uso__img:hover{
     transform: scale(1.01, 1.01);
+    transition: all 0.6s;
 }
 
 
@@ -366,7 +367,23 @@
 
 .tipo-franui{
     text-align: center;
-} 
+}
+
+.boton-galeria{
+    font-family: 'Arima', cursive;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e82f5b;
+    border:1px solid dimgray;
+    box-shadow:  10px 10px 25px rgba(0,0,0,0.5);
+}
+.boton-galeria:hover{
+    transform: scale(1.03,1.03);
+    background-color: #e82f5b;
+    color: white;
+}
+
 
 
 /* ENVIOS */
@@ -396,8 +413,11 @@
     
 }
 
+.tamaño-envios{
+    width: 35rem;
+}
+
 .formulario-envios{
-    width: 600px;
     background-color: #ec1e4e;
     margin: auto;
     margin-bottom: 50px;
@@ -406,20 +426,18 @@
     border-style: solid;
     border-width: 1px;
     box-shadow:  10px 10px 25px rgba(0,0,0,0.5);
-
 }
 
 .color-btn{
     font-size: 20px;
-    font-weight: bold;
-    color:  #ec1e4e !important;
+    color:  black !important;
     background-color: white;
     border:2px solid white !important;
 }
 .color-btn:hover{
     transform: scale(1.01,1.01) !important;
     transition: all 0.5s;
-    background-color: #f8b4b8;
+    background-color: white;
 }
 
 .sucursal{
@@ -795,5 +813,51 @@ footer{
         margin: auto;
         margin-bottom: 50px;
         border-style: solid;
+    }
+}
+
+
+/* MEDIAQUERIES BOOTSTRAP */
+
+@media (min-width: 320px) and (max-width:575px){
+    .logofranui{
+        width: 100px;
+    }
+    .contain-mq{
+        margin-top: 15%;
+        display: grid;
+        justify-content: center;
+    }
+    .carta-border{
+        border-bottom: solid #7923266e 1px !important;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .portada{
+        display: none;
+    }
+    .quesonfranui{
+        text-align: center;
+        margin: auto;
+        padding-left: 0%;
+        padding-bottom: 30px;
+    }
+    .modo-uso{
+        text-align: center;
+        margin: auto;
+        padding-right: 0%;
+    }
+    .productos__texto{
+        font-size: 70px;
+    }
+    .galeria__texto{
+        font-size: 70px;
+    }
+    .envios-texto{
+        font-size: 70px;
+    }
+    .texto-sobrenosotros{
+        margin-top: 80px;
+        font-size: 70px;
     }
 }
