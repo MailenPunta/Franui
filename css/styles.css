@@ -413,8 +413,8 @@
     
 }
 
-.tamaño-envios{
-    width: 35rem;
+.size-envios{
+    width: 600px;
 }
 
 .formulario-envios{
@@ -631,7 +631,6 @@ footer{
     }
     
     .producto__destacado{
-        padding-top: 40px;
         width: 200px;
         height: 200px;
         margin: auto;
@@ -783,7 +782,6 @@ footer{
     }
     
     .producto__destacado{
-        padding-top: 40px;
         width: 150px;
         height: 130px;
         margin: auto;
@@ -809,7 +807,6 @@ footer{
         margin: 20px 0;
     }
     .formulario-envios{
-        width: 300px;
         margin: auto;
         margin-bottom: 50px;
         border-style: solid;
@@ -859,5 +856,11 @@ footer{
     .texto-sobrenosotros{
         margin-top: 80px;
         font-size: 70px;
+    }
+    .formulario-envios{
+        width: 280px;
+        margin: auto;
+        margin-bottom: 50px;
+        border-style: solid;
     }
 }
