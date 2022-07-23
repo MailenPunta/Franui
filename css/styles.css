@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   /* margen externo */
@@ -101,41 +102,47 @@ a:focus {
   width: 40px;
   color: black; }
 
-.fondo-main {
-  background-color: #fde2ad4d; }
-
-.contenedor-queson {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #e82f5a54;
-  margin: 80px 180px;
-  border: dimgray solid 1px;
-  border-radius: 3px; }
+.margin-top {
+  margin-top: 80px;
+  box-shadow: 10px 10px 10px 14px rgba(0, 0, 0, 0.5);
+  border: 2px solid white; }
 
 .quesonfranui {
   font-family: 'Bebas Neue', cursive;
-  color: #792326;
+  color: white;
   font-size: 45px;
-  padding-top: 100px;
+  font-weight: 500;
   text-align: end;
-  margin-right: 180px;
+  margin-right: 100px;
+  margin-top: 30px;
   text-shadow: 1px 2px 2px black; }
 
-.queson__descripcion {
-  font-family: 'Bebas Neue', cursive;
+.texto-portada {
+  font-family: 'Handlee', cursive;
+  text-shadow: 2px 2px 2px black;
   color: white;
+  font-size: 32px;
   text-align: center;
-  margin: 0 30px;
-  flex-wrap: wrap;
-  font-size: 30px;
-  padding-top: 40px; }
+  margin: auto; }
 
-.quesonfranui__foto {
-  width: 300px;
-  margin-bottom: 50px;
-  padding-top: 20px; }
+/* sus 3 chocolates */
+.tamaño-carrusel {
+  width: 100%;
+  height: auto; }
 
+.titulo-chocolate {
+  font-family: 'Bebas Neue', cursive;
+  color: #792326;
+  font-size: 50px;
+  text-shadow: 1px 1px  black; }
+
+.texto-chocolate {
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+  font-size: 20px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.507); }
+
+/* modo de uso */
 .modo-uso {
   font-family: 'Bebas Neue', cursive;
   color: #792326;
