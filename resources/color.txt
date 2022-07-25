@@ -16,3 +16,6 @@ border: rgba(204, 204, 204, 0.377)
 #f8b4b8
 
 color rojito: #e82f5b
+
+
+color bordo: #884446
