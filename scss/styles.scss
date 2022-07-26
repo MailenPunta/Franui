@@ -107,7 +107,7 @@ a:focus{
 .portada{
     width: 100%;
     height: auto;
-    filter: saturate(160%);
+    filter: saturate(150%);
     border-bottom: #7923269a solid 2px;
     border-top: #7923269a solid 2px;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
@@ -135,6 +135,7 @@ a:focus{
     min-height: 25vh;
     width: 100%;
     overflow: hidden;
+    margin-top: 20px;
 }
 .contenedor-img img{
     position: absolute;
@@ -145,7 +146,7 @@ a:focus{
     width: auto;
     height: auto;
     z-index: 0;
-    filter: saturate(180%);
+    filter: saturate(150%);
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -168,8 +169,8 @@ a:focus{
 .texto-portada{
     font-family: 'Handlee', cursive;
     text-align: center;
-
     color: white;
+    font-weight: bold;
     font-size: 22px;
     text-shadow: 2px 2px 2px black;
 }
@@ -234,7 +235,7 @@ a:focus{
     border:dimgray solid 1px;
     border-radius: 3px;
     box-shadow: 8px 8px 8px rgba(0,0,0,0.5);
-    filter: saturate(160%);
+    filter: saturate(150%);
 
 }
 
@@ -288,7 +289,7 @@ a:focus{
     margin: auto;
     padding: 10px;
     padding-top: 20px;
-    filter: saturate(160%);
+    filter: saturate(150%);
 }
 
 
@@ -298,7 +299,7 @@ a:focus{
     margin: auto;
     padding: 10px;
     padding-top: 20px;
-    filter: saturate(160%);
+    filter: saturate(150%);
 }
 
 .botoncito-fondo{
@@ -339,7 +340,7 @@ a:focus{
     padding: 1px 1px 1px 1px;
     border-radius: 20px;
     box-shadow: 1px 10px 15px rgba(0,0,0,0.5);
-    filter: saturate(160%);
+    filter: saturate(130%);
 }
 
 
@@ -351,19 +352,17 @@ a:focus{
     padding: 1px 1px 1px 1px;
     border-radius: 20px;
     box-shadow: 1px 10px 15px rgba(0,0,0,0.5);
-    filter: saturate(160%);
+    filter: saturate(130%);
 }
 
 .galeria__fotos:hover{
     transform: scale(1.05, 1.05);
     transition: all 1s;
-    filter: grayscale(0.1);
 }
 
 .galeria__fotos-2:hover{
     transform: scale(1.05, 1.05);
     transition: all 1s;
-    filter:grayscale(0.1);
 }
 
 
@@ -395,6 +394,7 @@ a:focus{
     background-color: #e82f5b;
     border:1px solid dimgray;
     box-shadow:  10px 10px 25px rgba(0,0,0,0.5);
+    margin-bottom: 45px;
 }
 .boton-galeria:hover{
     transform: scale(1.03,1.03);
@@ -402,7 +402,10 @@ a:focus{
     color: white;
 }
 
+.sombras{
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
 
+}
 
 /* ENVIOS */
 
@@ -638,29 +641,6 @@ footer{
     
 
     /* PRODUCTOS */
-    .contenedor-productos{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        margin: 0%;
-        justify-items: center;
-        margin-bottom: 30px;
-    }
-    
-    .franui-leche{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    
-    .franui-semiamargo{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    
-    .franui-amargo{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
     .cartas-productos{
         display: flex;
         flex-direction: column;
@@ -729,6 +709,10 @@ footer{
     .about-us{
     width: 300px;
     margin: auto;
+    }
+    .propositos{
+    margin: 60px 0;
+    text-align: center;
     }
 }
 
@@ -868,10 +852,14 @@ footer{
         margin-bottom: 50px;
         border-style: solid;
     }
+    .propositos{
+        margin: 60px 0;
+        text-align: center;
+    }
 }
 
 
-/* MEDIAQUERIES BOOTSTRAP */
+/* MEDIAQUERIES BOOTSTRAP CELULAR*/
 
 @media (min-width: 320px) and (max-width:575px){
     .logofranui{
@@ -919,5 +907,23 @@ footer{
         margin: auto;
         margin-bottom: 50px;
         border-style: solid;
+    }
+    .texto-nav:hover{
+        color: #792326;
+        transform: none;
+        transition: none;
+        text-shadow: none;
+    }
+}
+/* MEDIAQUERIES BOOTSTRAP TABLET */
+@media (min-width: 576px)and (max-width:992px){
+    .cartas-envios{
+        padding: 15px !important;
+    }
+    .texto-nav:hover{
+        color: #792326;
+        transform: none;
+        transition: none;
+        text-shadow: none;
     }
 }
