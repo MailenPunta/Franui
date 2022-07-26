@@ -74,7 +74,7 @@ a:focus{
     margin-right: 300px;
 }
 
-/* INICIO */
+/* CARTAS-ATRIBUTOS*/
 
 .cartas-envios{
     padding: 0px !important;
@@ -102,34 +102,59 @@ a:focus{
     font-size: 15px;
 }
 
+/* INICIO */
 
 .portada{
     width: 100%;
-    height: 690px;
-    filter: saturate(100%);
+    height: auto;
+    filter: saturate(160%);
     border-bottom: #7923269a solid 2px;
     border-top: #7923269a solid 2px;
-    box-shadow: 10px 10px 10px 14px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
     cursor:pointer;
-}
-
-
-
-.iconsheader-contenedor{
-    display: flex;
-    justify-content: center;
-}
-
-.header__iconos{
-    margin: 30px 30px;
-    width: 40px;
-    color: black;
 }
 
 .margin-top{
     margin-top: 80px;
     box-shadow: 10px 10px 10px 14px rgba(0,0,0,0.5);
     border:2px solid white;
+}
+.overlay-negro2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+}
+.contenedor-img{
+    position: relative;
+    background-color: black;
+    height: 25vh;
+    min-height: 7rem;
+    width: 100%;
+    overflow: hidden;
+}
+.contenedor-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    filter: saturate(180%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.contenedor-img .container{
+    position: relative;
+    z-index: 2;
 }
 
 .quesonfranui{
@@ -139,27 +164,37 @@ a:focus{
     font-weight:500;
     text-align: end;
     margin-right: 100px;
-    margin-top: 30px;
     text-shadow: 1px 2px 2px black;
 }
-
 .texto-portada{
     font-family: 'Handlee', cursive;
-    text-shadow: 2px 2px 2px black;
-    color: white;
-    font-size: 32px;
     text-align: center;
-    margin: auto;
+
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px 2px black;
 }
+
 
 /* sus 3 chocolates */
 
+.nuestros-chocolates{
+    font-family: 'Bebas Neue', cursive;
+    color: #792326;
+    font-size: 65px;
+    margin:85px 0;
+    text-align: center;
+    text-shadow: 1px 2px 2px black;
+}
+
+.mt-carrusel{
+    margin-top: 70px;
+}
 .tamaño-carrusel{
     width: 100%;
     height: auto;
 
 }
-
 .titulo-chocolate{
     font-family: 'Bebas Neue', cursive;
     color: #792326;
@@ -200,6 +235,7 @@ a:focus{
     border:dimgray solid 1px;
     border-radius: 3px;
     box-shadow: 8px 8px 8px rgba(0,0,0,0.5);
+    filter: saturate(160%);
 
 }
 
@@ -253,6 +289,7 @@ a:focus{
     margin: auto;
     padding: 10px;
     padding-top: 20px;
+    filter: saturate(160%);
 }
 
 
@@ -262,6 +299,7 @@ a:focus{
     margin: auto;
     padding: 10px;
     padding-top: 20px;
+    filter: saturate(160%);
 }
 
 .botoncito-fondo{
@@ -302,6 +340,7 @@ a:focus{
     padding: 1px 1px 1px 1px;
     border-radius: 20px;
     box-shadow: 1px 10px 15px rgba(0,0,0,0.5);
+    filter: saturate(160%);
 }
 
 
@@ -313,18 +352,19 @@ a:focus{
     padding: 1px 1px 1px 1px;
     border-radius: 20px;
     box-shadow: 1px 10px 15px rgba(0,0,0,0.5);
+    filter: saturate(160%);
 }
 
 .galeria__fotos:hover{
     transform: scale(1.05, 1.05);
     transition: all 1s;
-    filter: grayscale(0.3);
+    filter: grayscale(0.1);
 }
 
 .galeria__fotos-2:hover{
     transform: scale(1.05, 1.05);
     transition: all 1s;
-    filter:grayscale(0.3);
+    filter:grayscale(0.1);
 }
 
 
@@ -332,7 +372,7 @@ a:focus{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     color: #792326;
-    margin: 30px 0;
+    margin: 20px 0;
     font-size: 85px;
     flex-wrap: wrap;
     text-decoration: none;
@@ -399,7 +439,7 @@ a:focus{
 .formulario-envios{
     background-color: #ec1e4e;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     border-radius: 20px;
     border: dimgray;
     border-style: solid;
@@ -420,6 +460,7 @@ a:focus{
 }
 
 .sucursal{
+    margin-top: 60px;
     text-align: center;
     font-size: 28px;
     color: #792326;
@@ -436,7 +477,43 @@ a:focus{
 
 /* SOBRE NOSOTROS */
 
-
+.contenedor-video{
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+.contenedor-video video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    filter: saturate(180%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.contenedor-video .container{
+    position: relative;
+    z-index: 2;
+}
+.overlay-negro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+}
 .texto-sobrenosotros{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
@@ -447,30 +524,19 @@ a:focus{
     text-decoration: none;
     text-shadow: 1px 2px 2px black;
 }
-
-
-.video-sobrenosotros{
-    width: 100%;
-    height: auto;
-    position: relative;
-    overflow: hidden !important;
-}
-.video__portada{
-    width: 100%;
-    width: 100%;
-    box-shadow:3px 3px 3px 3px rgba(0, 0, 0, 0.5);
-}
-.texto-encima{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    position: absolute;
+.texto-sobrenosotros2{
+    font-family: 'Handlee', cursive;
     text-align: center;
-    display: flex;
-    justify-content: center;
+    color: white;
+    font-size: 22px;
+    text-shadow: 1px 2px 2px black;
 }
 
+
+
+
+
+/* propositos */
 .propositos{
     font-family: 'Bebas Neue', cursive;
     color: #792326;
