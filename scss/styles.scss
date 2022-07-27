@@ -1,3 +1,8 @@
+@import "variables";
+@import "footer";
+@import "nav";
+
+
 * {
     margin: 0px; /* margen externo */
     padding: 0px; /* margen interno */
@@ -24,12 +29,27 @@
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
 }
 
+/* MARGIN-TOP-CLASE */
+.margin-top{
+    margin-top: 80px;
+    box-shadow: 10px 10px 10px 14px rgba(0,0,0,0.5);
+    border:2px solid white;
+}
+
+/* BORDE DETALLISTA */
+
+.border__linea{
+    margin-top: 80px;
+    border-top: solid rgba(105, 105, 105, 0.267) 1px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
 /* HEADER */
 
 .nav-position{
     margin-left: auto !important;
 }
-
 
 .logito:hover{
     transform: scale(1.05, 1.05);
@@ -67,14 +87,7 @@ a:focus{
     text-shadow: none;
 }
 
-/* BORDE DETALLISTA */
 
-.border__linea{
-    margin-top: 80px;
-    border-top: solid rgba(105, 105, 105, 0.267) 1px;
-    margin-left: 300px;
-    margin-right: 300px;
-}
 
 /* CARTAS-ATRIBUTOS*/
 
@@ -105,12 +118,7 @@ a:focus{
 }
 
 
-/* MARGIN-TOP-CLASE */
-.margin-top{
-    margin-top: 80px;
-    box-shadow: 10px 10px 10px 14px rgba(0,0,0,0.5);
-    border:2px solid white;
-}
+
 
 
 /* INICIO */
@@ -232,20 +240,19 @@ a:focus{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-.modo-uso__img{
-    width: 300px;
-    margin: 60px 20px;
-    margin-left: 50px;
-    border:dimgray solid 1px;
-    border-radius: 3px;
-    box-shadow: 8px 8px 8px rgba(0,0,0,0.5);
-    filter: saturate(150%);
-
-}
-.modo-uso__img:hover{
-    transform: scale(1.01, 1.01);
-    transition: all 0.6s;
+    .modo-uso__img{
+        width: 300px;
+        margin: 60px 20px;
+        margin-left: 50px;
+        border:dimgray solid 1px;
+        border-radius: 3px;
+        box-shadow: 8px 8px 8px rgba(0,0,0,0.5);
+        filter: saturate(150%);
+        &:hover{
+            transform: scale(1.01, 1.01);
+            transition: all 0.6s;
+        }
+    }
 }
 
 
@@ -321,45 +328,6 @@ a:focus{
 
 /* GALERIA */
 
-.galeria{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.galeria__fotos-2{
-    width: 350px;
-    height: 350px;
-    background-color:dimgray;
-    margin: 40px;
-    padding: 1px 1px 1px 1px;
-    border-radius: 20px;
-    box-shadow: 1px 10px 15px rgba(0,0,0,0.5);
-    filter: saturate(130%);
-}
-
-.galeria__fotos{
-    width: 350px;
-    height: 350px;
-    background-color:dimgray;
-    margin: 20px;
-    padding: 1px 1px 1px 1px;
-    border-radius: 20px;
-    box-shadow: 1px 10px 15px rgba(0,0,0,0.5);
-    filter: saturate(130%);
-}
-
-.galeria__fotos:hover{
-    transform: scale(1.05, 1.05);
-    transition: all 1s;
-}
-
-.galeria__fotos-2:hover{
-    transform: scale(1.05, 1.05);
-    transition: all 1s;
-}
-
-
 .galeria-titulo{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
@@ -370,12 +338,10 @@ a:focus{
     text-decoration: none;
     text-shadow: 1px 2px 2px black;
 }
-
 .boton-galeria{
-    font-family: 'Handlee', cursive;
+    font-family: 'Bebas Neue', cursive;
     color: white;
     font-size: 20px;
-    font-weight: bold;
     background-color: #792326;
     border:1px solid dimgray;
     box-shadow:  10px 10px 25px rgba(0,0,0,0.5);
@@ -386,6 +352,44 @@ a:focus{
     background-color: #792326;
 }
 
+.galeria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__fotos-2{
+        width: 350px;
+        height: 350px;
+        background-color:dimgray;
+        margin: 40px;
+        padding: 1px 1px 1px 1px;
+        border-radius: 20px;
+        box-shadow: 1px 10px 15px rgba(0,0,0,0.5);
+        filter: saturate(130%);
+    }
+    
+    &__fotos{
+        width: 350px;
+        height: 350px;
+        background-color:dimgray;
+        margin: 20px;
+        padding: 1px 1px 1px 1px;
+        border-radius: 20px;
+        box-shadow: 1px 10px 15px rgba(0,0,0,0.5);
+        filter: saturate(130%);
+    }
+    
+    &__fotos:hover{
+        transform: scale(1.05, 1.05);
+        transition: all 1s;
+    }
+    
+    &__fotos-2:hover{
+        transform: scale(1.05, 1.05);
+        transition: all 1s;
+    }
+    
+}
 
 
 /* ENVIOS */
@@ -538,176 +542,5 @@ a:focus{
     color: #792326;
 }
 
-/* FOOTER */
+@import "mediaqueries";
 
-footer{
-    background-color: #f8b4b8 ;
-    padding: 20px;
-    border-top: #7923269a solid 1px;
-}
-
-.logofranui-footer{
-    margin-right: 20px;
-}
-
-
-
-
-/* MEDIA QUERIE CELULAR*/
-@media (min-width: 320px) and (max-width: 575px) {
-    /* INDEX */
-    .modo-uso{
-        text-align: center;
-        font-size: 40px;
-        padding-right: 85px;
-    }
-    .modo-uso__img{
-        width: 50%;
-    }
-    .galeria{
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-    }
-    .galeria__fotos{
-        width: 200px;
-        height: 200px;
-        margin: 20px 0;
-    }
-    .galeria__fotos-2{
-        width: 200px;
-        height: 200px;
-        margin: 20px 0;
-    }
-    .about-us__textos{
-        text-align: center;
-        justify-items: center;
-        width: auto;
-        height: auto;
-        margin: 0%;
-    }
-    .about-us{
-    width: 300px;
-    margin: auto;
-    }
-    .propositos{
-    margin: 60px 0;
-    text-align: center;
-    }
-}
-
-
-
-
-/* MEDIA QUERIE TABLET */
-@media (min-width: 576px) and (max-width:992px) {
-    .portada{
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-    }
-    .modo-uso{
-        text-align: center;
-        font-size: 40px;
-        padding-right: 33px;
-    }
-    .modo-uso{
-        text-align: center;
-        font-size: 40px;
-        padding-right: 85px;
-    }
-    .modo-uso__img{
-        width: 50%;
-    }
-    .galeria{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        align-items:center;
-    }
-    .galeria__fotos{
-        width: 200px;
-        height: 200px;
-        margin: 20px 0;
-    }
-    .galeria__fotos-2{
-        width: 200px;
-        height: 200px;
-        margin: 20px 0;
-    }
-    .propositos{
-        margin: 60px 0;
-        text-align: center;
-    }
-}
-
-
-/* MEDIAQUERIES BOOTSTRAP CELULAR*/
-
-@media (min-width: 320px) and (max-width:575px){
-    .logofranui{
-        width: 100px;
-    }
-    .contain-mq{
-        margin-top: 15%;
-        display: grid;
-        justify-content: center;
-    }
-    .carta-border{
-        border-bottom: solid #7923266e 1px !important;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .portada{
-        display: none;
-    }
-    .quesonfranui{
-        text-align: center;
-        margin: auto;
-        padding-left: 0%;
-        padding-bottom: 30px;
-    }
-    .modo-uso{
-        text-align: center;
-        margin: auto;
-        padding-right: 0%;
-    }
-    .productos__texto{
-        font-size: 70px;
-    }
-    .galeria__texto{
-        font-size: 70px;
-    }
-    .envios-texto{
-        font-size: 70px;
-    }
-    .texto-sobrenosotros{
-        font-size: 57px;
-    }
-    .formulario-envios{
-        width: 280px;
-        margin: auto;
-        margin-bottom: 50px;
-        border-style: solid;
-    }
-    .texto-nav:hover{
-        color: #792326;
-        transform: none;
-        transition: none;
-        text-shadow: none;
-    }
-}
-/* MEDIAQUERIES BOOTSTRAP TABLET */
-@media (min-width: 576px)and (max-width:992px){
-    .cartas-envios{
-        padding: 15px !important;
-    }
-    .texto-nav:hover{
-        color: #792326;
-        transform: none;
-        transition: none;
-        text-shadow: none;
-    }
-}

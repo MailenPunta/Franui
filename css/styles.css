@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/* FOOTER */
+footer {
+  background-color: #f8b4b8;
+  padding: 20px;
+  border-top: #7923269a solid 1px; }
+
+.logofranui-footer {
+  margin-right: 20px; }
+
 * {
   margin: 0px;
   /* margen externo */
@@ -20,6 +29,19 @@
 
 .sombras {
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342); }
+
+/* MARGIN-TOP-CLASE */
+.margin-top {
+  margin-top: 80px;
+  box-shadow: 10px 10px 10px 14px rgba(0, 0, 0, 0.5);
+  border: 2px solid white; }
+
+/* BORDE DETALLISTA */
+.border__linea {
+  margin-top: 80px;
+  border-top: solid rgba(105, 105, 105, 0.267) 1px;
+  margin-left: 300px;
+  margin-right: 300px; }
 
 /* HEADER */
 .nav-position {
@@ -56,13 +78,6 @@ a:focus {
   color: #e82f5b !important;
   text-shadow: none; }
 
-/* BORDE DETALLISTA */
-.border__linea {
-  margin-top: 80px;
-  border-top: solid rgba(105, 105, 105, 0.267) 1px;
-  margin-left: 300px;
-  margin-right: 300px; }
-
 /* CARTAS-ATRIBUTOS*/
 .cartas-envios {
   padding: 0px !important; }
@@ -86,12 +101,6 @@ a:focus {
   font-family: 'Arima', cursive;
   font-weight: bold;
   font-size: 15px; }
-
-/* MARGIN-TOP-CLASE */
-.margin-top {
-  margin-top: 80px;
-  box-shadow: 10px 10px 10px 14px rgba(0, 0, 0, 0.5);
-  border: 2px solid white; }
 
 /* INICIO */
 .portada {
@@ -200,19 +209,17 @@ a:focus {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
-
-.modo-uso__img {
-  width: 300px;
-  margin: 60px 20px;
-  margin-left: 50px;
-  border: dimgray solid 1px;
-  border-radius: 3px;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
-  filter: saturate(150%); }
-
-.modo-uso__img:hover {
-  transform: scale(1.01, 1.01);
-  transition: all 0.6s; }
+  .modo-uso-div .modo-uso__img {
+    width: 300px;
+    margin: 60px 20px;
+    margin-left: 50px;
+    border: dimgray solid 1px;
+    border-radius: 3px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    filter: saturate(150%); }
+    .modo-uso-div .modo-uso__img:hover {
+      transform: scale(1.01, 1.01);
+      transition: all 0.6s; }
 
 /* PRODUCTOS */
 .animacion-franui:hover {
@@ -272,39 +279,6 @@ a:focus {
   margin: 10px !important; }
 
 /* GALERIA */
-.galeria {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-
-.galeria__fotos-2 {
-  width: 350px;
-  height: 350px;
-  background-color: dimgray;
-  margin: 40px;
-  padding: 1px 1px 1px 1px;
-  border-radius: 20px;
-  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
-  filter: saturate(130%); }
-
-.galeria__fotos {
-  width: 350px;
-  height: 350px;
-  background-color: dimgray;
-  margin: 20px;
-  padding: 1px 1px 1px 1px;
-  border-radius: 20px;
-  box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
-  filter: saturate(130%); }
-
-.galeria__fotos:hover {
-  transform: scale(1.05, 1.05);
-  transition: all 1s; }
-
-.galeria__fotos-2:hover {
-  transform: scale(1.05, 1.05);
-  transition: all 1s; }
-
 .galeria-titulo {
   font-family: 'Bebas Neue', cursive;
   text-align: center;
@@ -316,10 +290,9 @@ a:focus {
   text-shadow: 1px 2px 2px black; }
 
 .boton-galeria {
-  font-family: 'Handlee', cursive;
+  font-family: 'Bebas Neue', cursive;
   color: white;
   font-size: 20px;
-  font-weight: bold;
   background-color: #792326;
   border: 1px solid dimgray;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
@@ -328,6 +301,35 @@ a:focus {
 .boton-galeria:hover {
   transform: scale(1.03, 1.03);
   background-color: #792326; }
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .galeria__fotos-2 {
+    width: 350px;
+    height: 350px;
+    background-color: dimgray;
+    margin: 40px;
+    padding: 1px 1px 1px 1px;
+    border-radius: 20px;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+    filter: saturate(130%); }
+  .galeria__fotos {
+    width: 350px;
+    height: 350px;
+    background-color: dimgray;
+    margin: 20px;
+    padding: 1px 1px 1px 1px;
+    border-radius: 20px;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+    filter: saturate(130%); }
+  .galeria__fotos:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 1s; }
+  .galeria__fotos-2:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 1s; }
 
 /* ENVIOS */
 .envios-texto {
@@ -461,15 +463,6 @@ a:focus {
   font-family: 'Bebas Neue', cursive;
   font-size: 22px;
   color: #792326; }
-
-/* FOOTER */
-footer {
-  background-color: #f8b4b8;
-  padding: 20px;
-  border-top: #7923269a solid 1px; }
-
-.logofranui-footer {
-  margin-right: 20px; }
 
 /* MEDIA QUERIE CELULAR*/
 @media (min-width: 320px) and (max-width: 575px) {
