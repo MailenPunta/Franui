@@ -20,6 +20,9 @@
         background-position: 0% 50%;
     }
 }
+.sombras{
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
+}
 
 /* HEADER */
 
@@ -39,8 +42,6 @@
     background-color: #f8b4b8;
     z-index: 1;
     border-bottom: #7923269a solid 1px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.233);
-
 }
 
 .texto-nav{
@@ -66,6 +67,7 @@ a:focus{
     text-shadow: none;
 }
 
+/* BORDE DETALLISTA */
 
 .border__linea{
     margin-top: 80px;
@@ -102,6 +104,15 @@ a:focus{
     font-size: 15px;
 }
 
+
+/* MARGIN-TOP-CLASE */
+.margin-top{
+    margin-top: 80px;
+    box-shadow: 10px 10px 10px 14px rgba(0,0,0,0.5);
+    border:2px solid white;
+}
+
+
 /* INICIO */
 
 .portada{
@@ -114,11 +125,6 @@ a:focus{
     cursor:pointer;
 }
 
-.margin-top{
-    margin-top: 80px;
-    box-shadow: 10px 10px 10px 14px rgba(0,0,0,0.5);
-    border:2px solid white;
-}
 .overlay-negro2{
     position: absolute;
     top: 0;
@@ -210,7 +216,8 @@ a:focus{
 }
 
 
-/* modo de uso */
+
+/* MODO DE USO */
 .modo-uso{
     font-family: 'Bebas Neue', cursive;
     color: #792326;
@@ -221,13 +228,11 @@ a:focus{
     margin-left: 172px;
     text-shadow: 1px 2px 2px black;
 }
-
 .modo-uso-div{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .modo-uso__img{
     width: 300px;
     margin: 60px 20px;
@@ -238,7 +243,6 @@ a:focus{
     filter: saturate(150%);
 
 }
-
 .modo-uso__img:hover{
     transform: scale(1.01, 1.01);
     transition: all 0.6s;
@@ -258,7 +262,7 @@ a:focus{
     padding: 0% !important;
 }
 
-.productos__texto{
+.productos-texto{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     color: #792326;
@@ -275,15 +279,7 @@ a:focus{
     color: #792326;
 }
 
-
-.productos-descripcion{
-    font-size: 17px;
-    text-align: center;
-    margin: 5px 5px;
-}
-
-
-.productos__franui{ 
+.productos-franui{ 
     width:  250px; /* ancho */
     height: 250px;
     margin: auto;
@@ -291,9 +287,7 @@ a:focus{
     padding-top: 20px;
     filter: saturate(150%);
 }
-
-
-.producto__destacado{
+.producto-destacado{
     width: 250px;
     height: 250px;
     margin: auto;
@@ -324,6 +318,7 @@ a:focus{
 }
 
 
+
 /* GALERIA */
 
 .galeria{
@@ -342,7 +337,6 @@ a:focus{
     box-shadow: 1px 10px 15px rgba(0,0,0,0.5);
     filter: saturate(130%);
 }
-
 
 .galeria__fotos{
     width: 350px;
@@ -366,7 +360,7 @@ a:focus{
 }
 
 
-.galeria__texto{
+.galeria-titulo{
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     color: #792326;
@@ -377,35 +371,22 @@ a:focus{
     text-shadow: 1px 2px 2px black;
 }
 
-.contenedorfranui{
-    width: 500px;
-    margin-bottom: 30px;
-}
-
-.tipo-franui{
-    text-align: center;
-}
-
 .boton-galeria{
-    font-family: 'Arima', cursive;
+    font-family: 'Handlee', cursive;
     color: white;
     font-size: 20px;
     font-weight: bold;
-    background-color: #e82f5b;
+    background-color: #792326;
     border:1px solid dimgray;
     box-shadow:  10px 10px 25px rgba(0,0,0,0.5);
     margin-bottom: 45px;
 }
 .boton-galeria:hover{
     transform: scale(1.03,1.03);
-    background-color: #e82f5b;
-    color: white;
+    background-color: #792326;
 }
 
-.sombras{
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
 
-}
 
 /* ENVIOS */
 
@@ -450,14 +431,15 @@ a:focus{
 }
 
 .color-btn{
-    font-size: 20px;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 22px;
     color:  black !important;
     background-color: white;
     border:2px solid white !important;
 }
 .color-btn:hover{
     transform: scale(1.01,1.01) !important;
-    transition: all 0.5s;
     background-color: white;
 }
 
@@ -471,7 +453,7 @@ a:focus{
 }
 
 .direccion{
-    text-align: right;
+    text-align: center;
     margin: 15px;
 }
 
@@ -534,10 +516,6 @@ a:focus{
     text-shadow: 1px 2px 2px black;
 }
 
-
-
-
-
 /* propositos */
 .propositos{
     font-family: 'Bebas Neue', cursive;
@@ -577,104 +555,14 @@ footer{
 
 /* MEDIA QUERIE CELULAR*/
 @media (min-width: 320px) and (max-width: 575px) {
-    header{
-        height: auto;
-        position: relative;
-    }
-    .header__list{
-        flex-direction: column;
-        flex-grow: 0;
-        align-items: center;
-        font-size: 20px;
-    }
-    .header__nav{
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        position: relative;
-        
-    }
-    .header__logo{
-        height: 30px;
-        margin-left: 30px;
-        position: relative;
-    }
     /* INDEX */
-    .portada{
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-    }
-
-    .quesonfranui{
-        text-align: center;
-        font-size: 40px;
-        padding-left: 90px;
-    }
-    .contenedor-queson{
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 0%;
-    }
-
-    .queson__descripcion{
-        text-align: center;
-        flex-wrap: wrap;
-        font-size: 20px;
-
-    }
-    .quesonfranui__foto{
-        width: 150px;
-    }
     .modo-uso{
         text-align: center;
         font-size: 40px;
         padding-right: 85px;
     }
-    
     .modo-uso__img{
         width: 50%;
-    }
-    
-
-    /* PRODUCTOS */
-    .cartas-productos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 300px;
-        height: 300px;
-    }
-    
-    .texto-producto{
-        font-size: 20px;
-        font-family: 'Arima', cursive;
-    }
-    
-    .productos-descripcion{
-        font-size: 13px;
-        text-align: center;
-        margin: 5px 5px;
-    }
-    
-    .productos__franui{ 
-        width:  200px; /* ancho */
-        height: 200px;
-        margin: auto;
-        padding-top: 20px;
-    }
-    
-    .producto__destacado{
-        width: 200px;
-        height: 200px;
-        margin: auto;
-    }
-    button{
-        color: white;
-        font-size: 13px;
     }
     .galeria{
         display: flex;
@@ -692,12 +580,6 @@ footer{
         width: 200px;
         height: 200px;
         margin: 20px 0;
-    }
-    .formulario-envios{
-        width: 300px;
-        margin: auto;
-        margin-bottom: 50px;
-        border-style: solid;
     }
     .about-us__textos{
         text-align: center;
@@ -721,60 +603,10 @@ footer{
 
 /* MEDIA QUERIE TABLET */
 @media (min-width: 576px) and (max-width:992px) {
-    header{
-        height: auto;
-        position: relative;
-    }
-    .header__list{
-        flex-direction:column;
-        flex-grow: 0;
-        align-items: center;
-        font-size: 20px;
-    }
-    .header__nav{
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        position: relative;
-        
-    }
-    .header__logo{
-        height: 40px;
-        margin-left: 30px;
-        position: fixed;
-    }
     .portada{
         flex-direction: column;
         height: auto;
         width: 100%;
-    }
-    .quesonfranui{
-        text-align: center;
-        font-size: 40px;
-        padding-left: 90px;
-
-    }
-    .contenedor-queson{
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: left;
-        flex-wrap: wrap;
-        margin: 0%;
-    }
-
-    .queson__descripcion{
-        text-align: center;
-        margin-left: 70px;
-        flex-wrap: wrap;
-        font-size: 20px;
-    }
-    .quesonfranui__foto{
-        width: 150px;
-        margin-bottom: 50px;
-        padding-top: 20px;
-        margin-left: 70px;
     }
     .modo-uso{
         text-align: center;
@@ -788,48 +620,6 @@ footer{
     }
     .modo-uso__img{
         width: 50%;
-    }
-    
-    .contenedor-productos{
-        display: grid;
-        grid-template-rows: 1fr;
-        justify-items: center;
-        margin: 0%;
-    }
-    .cartas-productos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 150px;
-        height: 300px;
-        margin-bottom: 30px;
-    }
-    .texto-producto{
-        font-size: 18px;
-        font-family: 'Arima', cursive;
-    }
-    
-    .productos-descripcion{
-        font-size: 13px;
-        text-align: center;
-        margin: 5px 5px;
-    }
-    
-    .productos__franui{ 
-        width:  150px;
-        height: 130px;
-        margin: auto;
-        padding-top: 20px;
-    }
-    
-    .producto__destacado{
-        width: 150px;
-        height: 130px;
-        margin: auto;
-    }
-    button{
-        color: white;
-        font-size: 10px;
     }
     .galeria{
         display: flex;
@@ -846,11 +636,6 @@ footer{
         width: 200px;
         height: 200px;
         margin: 20px 0;
-    }
-    .formulario-envios{
-        margin: auto;
-        margin-bottom: 50px;
-        border-style: solid;
     }
     .propositos{
         margin: 60px 0;
@@ -899,8 +684,7 @@ footer{
         font-size: 70px;
     }
     .texto-sobrenosotros{
-        margin-top: 80px;
-        font-size: 70px;
+        font-size: 57px;
     }
     .formulario-envios{
         width: 280px;
