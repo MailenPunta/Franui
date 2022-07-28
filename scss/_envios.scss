@@ -1,0 +1,68 @@
+/* ENVIOS */
+
+.envios-texto{
+    font-family: $font-titulos;
+    text-align: center;
+    color: $color-titulos;
+    margin: 30px 0;
+    font-size: 85px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    text-shadow: 1px 2px 2px black;
+}
+
+.venta-arg{
+    text-align: center;
+    font-family: $font-secundaria;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.completar-font{
+    font-size: 40px;
+    font-family: $font-titulos !important;
+    text-shadow: 1px 2px 2px black;
+    
+}
+
+.size-envios{
+    width: 600px;
+}
+
+.formulario-envios{
+    background-color: #ec1e4e;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border: dimgray;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow:  10px 10px 25px rgba(0,0,0,0.5);
+}
+
+.color-btn{
+    font-family: $font-titulos;
+    font-weight: bold;
+    font-size: 22px;
+    color:  $color-titulos !important;
+    background-color: white;
+    border:2px solid white !important;
+}
+.color-btn:hover{
+    transform: scale(1.01,1.01) !important;
+    background-color: white;
+}
+
+.sucursal{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 28px;
+    color: $color-titulos;
+    font-family: $font-titulos;
+    
+}
+
+.direccion{
+    text-align: center;
+    margin: 15px;
+}

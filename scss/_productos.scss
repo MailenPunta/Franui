@@ -1,0 +1,65 @@
+/* PRODUCTOS */
+
+.animacion-franui:hover{
+    transform: scale(1.03,1.03);
+    transition: all 0.5s;
+}
+
+.contenedor-franui{
+    padding: 0% !important;
+}
+
+.productos-texto{
+    font-family: $font-titulos;
+    text-align: center;
+    color: $color-titulos;
+    margin: 30px 0;
+    font-size: 85px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    text-shadow: 1px 2px 2px black;
+}
+
+.texto-productos{
+    font-family: $font-titulos;
+    font-size: 28px;
+    color: $color-titulos;
+}
+
+.productos-franui{ 
+    width:  250px; /* ancho */
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 20px;
+    filter: saturate(150%);
+}
+.producto-destacado{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 20px;
+    filter: saturate(150%);
+}
+
+.botoncito-fondo{
+    background-color: white !important ;
+}
+
+.botoncito{
+    background-color: #e82f5b;
+    border: dimgray solid 1px;
+    border-radius: 3px;
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+}
+
+.botoncito:hover{
+    transform: scale(1.05,1.05);
+}
+
+.card-margin{
+    margin: 10px !important;
+}

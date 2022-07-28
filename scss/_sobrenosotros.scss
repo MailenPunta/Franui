@@ -1,0 +1,78 @@
+/* SOBRE NOSOTROS */
+
+.contenedor-video{
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+.contenedor-video video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    filter: saturate(180%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.contenedor-video .container{
+    position: relative;
+    z-index: 2;
+}
+.overlay-negro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+}
+.texto-sobrenosotros{
+    font-family: $font-titulos;
+    text-align: center;
+    color: white;
+    margin: 15px 0;
+    font-size: 85px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    text-shadow: 1px 2px 2px black;
+}
+.texto-sobrenosotros2{
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    text-shadow: 1px 2px 2px black;
+}
+
+/* propositos */
+.propositos{
+    font-family: $font-titulos;
+    color: $color-titulos;
+    font-size: 45px;
+    margin:60px 0;
+    text-align: start;
+    margin-left: 172px;
+    text-shadow: 1px 2px 2px black;
+}
+
+.textos-motivacion{
+    font-family: $font-secundaria;
+    font-weight: bold;
+    font-size: 15px;
+}
+.textos-m-t{
+    font-family: $font-titulos;
+    font-size: 22px;
+    color: $color-titulos;
+}

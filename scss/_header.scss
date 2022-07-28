@@ -1,0 +1,43 @@
+/* HEADER */
+
+.nav-position{
+    margin-left: auto !important;
+}
+
+.logito:hover{
+    transform: scale(1.05, 1.05);
+    transition: all 0.5s;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+    background-color: #f8b4b8;
+    z-index: 1;
+    border-bottom: #7923269a solid 1px;
+    
+}
+
+.texto-nav{
+    color: white;
+    font-family: $font-titulos;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px black ;
+    margin: 10px;
+    &:hover{
+        color: $color-titulos;
+        transform: scale(1.10, 1.10);
+        transition: all 0.8s;
+        text-shadow: none;
+    }
+}
+
+
+
+a:active{
+    color: #e82f5b !important;
+}
+a:focus{
+    color: #e82f5b !important;
+    text-shadow: none;
+}
