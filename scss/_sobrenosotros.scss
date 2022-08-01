@@ -39,13 +39,9 @@
 }
 .texto-sobrenosotros{
     font-family: $font-titulos;
-    text-align: center;
     color: white;
     margin: 15px 0;
-    font-size: 85px;
-    flex-wrap: wrap;
-    text-decoration: none;
-    text-shadow: 1px 2px 2px black;
+    @extend .titulos-atributos;
 }
 .texto-sobrenosotros2{
     font-family: 'Handlee', cursive;

@@ -44,6 +44,22 @@ a:focus {
   color: #e82f5b !important;
   text-shadow: none; }
 
+/* EXTEND */
+.productos-tamaño, .productos-franui, .producto-destacado {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding: 10px;
+  padding-top: 20px;
+  filter: saturate(150%); }
+
+.titulos-atributos, .productos-texto, .galeria-titulo, .envios-texto, .texto-sobrenosotros {
+  text-align: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  font-size: 85px;
+  text-shadow: 1px 2px 2px black; }
+
 /* PRODUCTOS */
 .animacion-franui:hover {
   transform: scale(1.03, 1.03);
@@ -54,35 +70,14 @@ a:focus {
 
 .productos-texto {
   font-family: "Bebas Neue", cursive;
-  text-align: center;
   color: #792326;
   margin: 30px 0;
-  font-size: 85px;
-  flex-wrap: wrap;
-  text-decoration: none;
-  text-shadow: 1px 2px 2px black; }
+  font-size: 85px; }
 
 .texto-productos {
   font-family: "Bebas Neue", cursive;
   font-size: 28px;
   color: #792326; }
-
-.productos-franui {
-  width: 250px;
-  /* ancho */
-  height: 250px;
-  margin: auto;
-  padding: 10px;
-  padding-top: 20px;
-  filter: saturate(150%); }
-
-.producto-destacado {
-  width: 250px;
-  height: 250px;
-  margin: auto;
-  padding: 10px;
-  padding-top: 20px;
-  filter: saturate(150%); }
 
 .botoncito-fondo {
   background-color: white !important; }
@@ -104,13 +99,8 @@ a:focus {
 /* GALERIA */
 .galeria-titulo {
   font-family: "Bebas Neue", cursive;
-  text-align: center;
   color: #792326;
-  margin: 20px 0;
-  font-size: 85px;
-  flex-wrap: wrap;
-  text-decoration: none;
-  text-shadow: 1px 2px 2px black; }
+  margin: 20px 0; }
 
 .boton-galeria {
   font-family: "Bebas Neue", cursive;
@@ -158,13 +148,8 @@ a:focus {
 /* ENVIOS */
 .envios-texto {
   font-family: "Bebas Neue", cursive;
-  text-align: center;
   color: #792326;
-  margin: 30px 0;
-  font-size: 85px;
-  flex-wrap: wrap;
-  text-decoration: none;
-  text-shadow: 1px 2px 2px black; }
+  margin: 30px 0; }
 
 .venta-arg {
   text-align: center;
@@ -253,13 +238,8 @@ a:focus {
 
 .texto-sobrenosotros {
   font-family: "Bebas Neue", cursive;
-  text-align: center;
   color: white;
-  margin: 15px 0;
-  font-size: 85px;
-  flex-wrap: wrap;
-  text-decoration: none;
-  text-shadow: 1px 2px 2px black; }
+  margin: 15px 0; }
 
 .texto-sobrenosotros2 {
   font-family: 'Handlee', cursive;
@@ -415,7 +395,8 @@ a:focus {
   color: #792326;
   font-size: 53px;
   margin: 85px 0;
-  text-align: center;
+  text-align: end;
+  margin-right: 172px;
   text-shadow: 1px 2px 2px black; }
 
 .mt-carrusel {
@@ -455,7 +436,6 @@ a:focus {
   .modo-uso-div .modo-uso__img {
     width: 300px;
     margin: 60px 20px;
-    margin-left: 50px;
     border: dimgray solid 1px;
     border-radius: 3px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
@@ -467,6 +447,10 @@ a:focus {
 /* MEDIA QUERIE CELULAR*/
 @media (min-width: 320px) and (max-width: 575px) {
   /* INDEX */
+  .nuestros-chocolates {
+    font-size: 50px;
+    text-align: center;
+    margin: 85px 0; }
   .modo-uso {
     text-align: center;
     font-size: 40px;
@@ -506,6 +490,10 @@ a:focus {
     flex-direction: column;
     height: auto;
     width: 100%; }
+  .nuestros-chocolates {
+    font-size: 53px;
+    text-align: center;
+    margin: 85px 0; }
   .modo-uso {
     text-align: center;
     font-size: 40px;

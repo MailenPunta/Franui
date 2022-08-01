@@ -1,6 +1,11 @@
 /* MEDIA QUERIE CELULAR*/
 @media (min-width: 320px) and (max-width: 575px) {
     /* INDEX */
+    .nuestros-chocolates{
+        font-size: 50px;
+        text-align: center;
+        margin: 85px 0;
+    }
     .modo-uso{
         text-align: center;
         font-size: 40px;
@@ -52,6 +57,11 @@
         flex-direction: column;
         height: auto;
         width: 100%;
+    }
+    .nuestros-chocolates{
+        font-size: 53px;
+        text-align: center;
+        margin: 85px 0;
     }
     .modo-uso{
         text-align: center;

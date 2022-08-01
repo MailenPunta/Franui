@@ -11,13 +11,10 @@
 
 .productos-texto{
     font-family: $font-titulos;
-    text-align: center;
     color: $color-titulos;
     margin: 30px 0;
     font-size: 85px;
-    flex-wrap: wrap;
-    text-decoration: none;
-    text-shadow: 1px 2px 2px black;
+    @extend .titulos-atributos;
 }
 
 .texto-productos{
@@ -27,20 +24,10 @@
 }
 
 .productos-franui{ 
-    width:  250px; /* ancho */
-    height: 250px;
-    margin: auto;
-    padding: 10px;
-    padding-top: 20px;
-    filter: saturate(150%);
+    @extend .productos-tamaño
 }
 .producto-destacado{
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    padding: 10px;
-    padding-top: 20px;
-    filter: saturate(150%);
+    @extend .productos-tamaño
 }
 
 .botoncito-fondo{
