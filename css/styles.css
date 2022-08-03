@@ -216,7 +216,7 @@ a:focus {
   width: auto;
   height: auto;
   z-index: 0;
-  filter: saturate(180%);
+  filter: saturate(230%);
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
