@@ -2,7 +2,7 @@
 @media (min-width: 320px) and (max-width: 575px) {
     /* INDEX */
     .nuestros-chocolates{
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
         margin: 85px 0;
     }
@@ -10,9 +10,6 @@
         text-align: center;
         font-size: 40px;
         padding-right: 85px;
-    }
-    .modo-uso__img{
-        width: 50%;
     }
     .galeria{
         display: flex;
@@ -65,13 +62,8 @@
     }
     .modo-uso{
         text-align: center;
-        font-size: 40px;
-        padding-right: 33px;
-    }
-    .modo-uso{
-        text-align: center;
-        font-size: 40px;
-        padding-right: 85px;
+        margin: auto;
+        padding-right: 0%;
     }
     .modo-uso__img{
         width: 50%;
@@ -121,8 +113,8 @@
     .quesonfranui{
         text-align: center;
         margin: auto;
-        padding-left: 0%;
-        padding-bottom: 30px;
+        padding: 20px;
+        font-size: 40px;
     }
     .modo-uso{
         text-align: center;
@@ -159,10 +151,19 @@
     .cartas-envios{
         padding: 15px !important;
     }
+    .productos-tamaño{
+        width: 180px;
+        height: 180px;
+        margin: auto;
+    }
     .texto-nav:hover{
         color: $color-titulos;
         transform: none;
         transition: none;
         text-shadow: none;
+    }
+    .quesonfranui{
+        font-size: 55px;
+        padding: 20px;
     }
 }

@@ -350,7 +350,6 @@ a:focus {
 .contenedor-img {
   position: relative;
   background-color: black;
-  min-height: 25vh;
   width: 100%;
   overflow: hidden;
   margin-top: 20px; }
@@ -390,6 +389,9 @@ a:focus {
   text-shadow: 2px 2px 2px black; }
 
 /* sus 3 chocolates */
+.flechita {
+  background-color: #792326; }
+
 .nuestros-chocolates {
   font-family: 'Bebas Neue', cursive;
   color: #792326;
@@ -422,9 +424,8 @@ a:focus {
 .modo-uso {
   font-family: 'Bebas Neue', cursive;
   color: #792326;
-  margin-top: 30px;
-  font-size: 45px;
-  margin-top: 60px;
+  font-size: 53px;
+  margin: 80px 0;
   text-align: start;
   margin-left: 172px;
   text-shadow: 1px 2px 2px black; }
@@ -448,15 +449,13 @@ a:focus {
 @media (min-width: 320px) and (max-width: 575px) {
   /* INDEX */
   .nuestros-chocolates {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin: 85px 0; }
   .modo-uso {
     text-align: center;
     font-size: 40px;
     padding-right: 85px; }
-  .modo-uso__img {
-    width: 50%; }
   .galeria {
     display: flex;
     justify-content: center;
@@ -496,12 +495,8 @@ a:focus {
     margin: 85px 0; }
   .modo-uso {
     text-align: center;
-    font-size: 40px;
-    padding-right: 33px; }
-  .modo-uso {
-    text-align: center;
-    font-size: 40px;
-    padding-right: 85px; }
+    margin: auto;
+    padding-right: 0%; }
   .modo-uso__img {
     width: 50%; }
   .galeria {
@@ -538,8 +533,8 @@ a:focus {
   .quesonfranui {
     text-align: center;
     margin: auto;
-    padding-left: 0%;
-    padding-bottom: 30px; }
+    padding: 20px;
+    font-size: 40px; }
   .modo-uso {
     text-align: center;
     margin: auto;
@@ -567,8 +562,15 @@ a:focus {
 @media (min-width: 576px) and (max-width: 992px) {
   .cartas-envios {
     padding: 15px !important; }
+  .productos-tamaño, .productos-franui, .producto-destacado {
+    width: 180px;
+    height: 180px;
+    margin: auto; }
   .texto-nav:hover {
     color: #792326;
     transform: none;
     transition: none;
-    text-shadow: none; } }
+    text-shadow: none; }
+  .quesonfranui {
+    font-size: 55px;
+    padding: 20px; } }
