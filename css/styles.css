@@ -10,6 +10,11 @@ footer {
 .logofranui-footer {
   margin-right: 20px; }
 
+.texto-footer {
+  color: white;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438); }
+
 /* HEADER */
 .nav-position {
   margin-left: auto !important; }
@@ -105,11 +110,12 @@ a:focus {
 .boton-galeria {
   font-family: "Bebas Neue", cursive;
   color: white;
-  font-size: 20px;
+  font-size: 23px;
   background-color: #792326;
   border: 1px solid dimgray;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
-  margin-bottom: 45px; }
+  margin: 60px;
+  filter: saturate(120%); }
   .boton-galeria:focus {
     color: #792326;
     background-color: none; }
@@ -149,7 +155,7 @@ a:focus {
 .envios-texto {
   font-family: "Bebas Neue", cursive;
   color: #792326;
-  margin: 30px 0; }
+  margin-top: 20px; }
 
 .venta-arg {
   text-align: center;
@@ -161,6 +167,9 @@ a:focus {
   font-size: 40px;
   font-family: "Bebas Neue", cursive !important;
   text-shadow: 1px 2px 2px black; }
+
+.datos-enviar {
+  margin-top: 15px; }
 
 .size-envios {
   width: 600px; }
@@ -266,7 +275,8 @@ a:focus {
 .textos-m-t {
   font-family: "Bebas Neue", cursive;
   font-size: 22px;
-  color: #792326; }
+  color: #792326;
+  text-align: center; }
 
 * {
   margin: 0px;
@@ -331,7 +341,7 @@ a:focus {
 .portada {
   width: 100%;
   height: auto;
-  filter: saturate(150%);
+  filter: saturate(130%);
   border-bottom: #7923269a solid 2px;
   border-top: #7923269a solid 2px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
@@ -343,13 +353,12 @@ a:focus {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #e76166ab;
   opacity: 0.3;
   z-index: 1; }
 
 .contenedor-img {
   position: relative;
-  background-color: black;
   width: 100%;
   overflow: hidden;
   margin-top: 20px; }
@@ -362,7 +371,7 @@ a:focus {
     width: auto;
     height: auto;
     z-index: 0;
-    filter: saturate(150%);
+    filter: blur(5px);
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -384,9 +393,8 @@ a:focus {
   font-family: 'Handlee', cursive;
   text-align: center;
   color: white;
-  font-weight: bold;
   font-size: 22px;
-  text-shadow: 2px 2px 2px black; }
+  text-shadow: 1px 2px 2px black; }
 
 /* sus 3 chocolates */
 .flechita {
@@ -451,11 +459,25 @@ a:focus {
   .nuestros-chocolates {
     font-size: 40px;
     text-align: center;
-    margin: 85px 0; }
+    margin: 40px 0; }
   .modo-uso {
     text-align: center;
     font-size: 40px;
     padding-right: 85px; }
+  .modo-uso-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .modo-uso-div .modo-uso__img {
+      width: 250px;
+      margin: 20px;
+      border: dimgray solid 1px;
+      border-radius: 3px;
+      box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+      filter: saturate(150%); }
+      .modo-uso-div .modo-uso__img:hover {
+        transform: scale(1.01, 1.01);
+        transition: all 0.6s; }
   .galeria {
     display: flex;
     justify-content: center;
@@ -492,13 +514,11 @@ a:focus {
   .nuestros-chocolates {
     font-size: 53px;
     text-align: center;
-    margin: 85px 0; }
+    margin: 55px 0; }
   .modo-uso {
     text-align: center;
     margin: auto;
     padding-right: 0%; }
-  .modo-uso__img {
-    width: 50%; }
   .galeria {
     display: flex;
     justify-content: space-evenly;
@@ -514,7 +534,21 @@ a:focus {
     margin: 20px 0; }
   .propositos {
     margin: 60px 0;
-    text-align: center; } }
+    text-align: center; }
+  .modo-uso-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .modo-uso-div .modo-uso__img {
+      width: 250px;
+      margin: 20px;
+      border: dimgray solid 1px;
+      border-radius: 3px;
+      box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+      filter: saturate(150%); }
+      .modo-uso-div .modo-uso__img:hover {
+        transform: scale(1.01, 1.01);
+        transition: all 0.6s; } }
 
 /* MEDIAQUERIES BOOTSTRAP CELULAR*/
 @media (min-width: 320px) and (max-width: 575px) {
@@ -529,7 +563,10 @@ a:focus {
     margin-top: 20px;
     margin-bottom: 20px; }
   .portada {
-    display: none; }
+    width: 100%;
+    height: 23vmax;
+    box-shadow: none;
+    border-top: none; }
   .quesonfranui {
     text-align: center;
     margin: auto;
