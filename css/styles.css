@@ -444,7 +444,7 @@ a:focus {
   flex-wrap: wrap; }
   .modo-uso-div .modo-uso__img {
     width: 300px;
-    margin: 60px 20px;
+    margin: 35px 20px;
     border: dimgray solid 1px;
     border-radius: 3px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
@@ -502,7 +502,7 @@ a:focus {
     width: 300px;
     margin: auto; }
   .propositos {
-    margin: 60px 0;
+    margin: 48px 0;
     text-align: center; } }
 
 /* MEDIA QUERIE TABLET */
@@ -555,7 +555,7 @@ a:focus {
   .logofranui {
     width: 100px; }
   .contain-mq {
-    margin-top: 15%;
+    margin-top: 28px;
     display: grid;
     justify-content: center; }
   .carta-border {
@@ -576,24 +576,30 @@ a:focus {
     text-align: center;
     margin: auto;
     padding-right: 0%; }
-  .productos__texto {
+  .productos-texto {
     font-size: 70px; }
-  .galeria__texto {
+  .galeria-titulo {
     font-size: 70px; }
   .envios-texto {
     font-size: 70px; }
   .texto-sobrenosotros {
     font-size: 57px; }
+  .completar-font {
+    font-size: 38px; }
   .formulario-envios {
-    width: 280px;
+    width: 340px;
     margin: auto;
-    margin-bottom: 50px;
     border-style: solid; }
-  .texto-nav:hover {
-    color: #792326;
-    transform: none;
-    transition: none;
-    text-shadow: none; } }
+  .sucursal {
+    margin-top: 30px; }
+  .texto-nav {
+    margin: 3px;
+    text-align: center; }
+    .texto-nav .texto-nav:hover {
+      color: #792326;
+      transform: none;
+      transition: none;
+      text-shadow: none; } }
 
 /* MEDIAQUERIES BOOTSTRAP TABLET */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -603,11 +609,14 @@ a:focus {
     width: 180px;
     height: 180px;
     margin: auto; }
-  .texto-nav:hover {
-    color: #792326;
-    transform: none;
-    transition: none;
-    text-shadow: none; }
+  .texto-nav {
+    margin: 5px;
+    text-align: center; }
+    .texto-nav .texto-nav:hover {
+      color: #792326;
+      transform: none;
+      transition: none;
+      text-shadow: none; }
   .quesonfranui {
     font-size: 55px;
     padding: 20px; } }
